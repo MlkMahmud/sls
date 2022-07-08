@@ -11,7 +11,7 @@ module.exports.handler = async (event, context, callback) => {
           storageMethod: 'sql',
           sqlDialect: 'postgres',
           sqlConnectionSsl: true,
-          sqlConnectionUrl: process.enb.DB_URL,
+          sqlConnectionUrl: process.env.DB_URL,
           sqlDialectOptions: { ssl: true },
         },
       });
