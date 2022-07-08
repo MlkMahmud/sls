@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "sls deploy --verbose --param=\"db_url=${DB_URL}\""
+    "deploy": "sls deploy --verbose --param=\"db_url=${DB_URL}\"",
+    "destroy": "sls remove --param=\"db_url=${DB_URL}\" --verbose"
   },
   "keywords": [],
   "author": "",
