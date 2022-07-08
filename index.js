@@ -15,7 +15,9 @@ module.exports.handler = async (event, context, callback) => {
           sqlDialectOptions: { ssl: true },
         },
       });
-      handler = serverless(app);
+      handler = serverless(app, {
+        binary: ['application/json', 'image/*']
+      });
     }
     const result = await handler(event, context);
     return result;
