@@ -16,7 +16,7 @@ module.exports.handler = async (event, context, callback) => {
         },
       });
       handler = serverless(app, {
-        binary: ['application/json', 'image/*']
+        binary: ['application/json', 'image/*', 'font/*'],
       });
     }
     const result = await handler(event, context);
