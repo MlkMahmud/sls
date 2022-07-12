@@ -36,4 +36,4 @@ jobs:
           echo "DB_URL=${{ secrets.DB_URL }}" >> $GITHUB_ENV
 
       - name: Deploy serverless app
-        run: npm run deploy
+        run: npm run destroy
